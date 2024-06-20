@@ -35,6 +35,10 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA
 #include "mktorrent.h"    /* struct metafile */
 #include "output.h"
 
+#ifdef _WIN32
+#define random() rand()
+#define srandom(seed) srand(seed)
+#endif
 
 /*
  * write announce list
