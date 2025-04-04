@@ -14,15 +14,15 @@
 
 /* max torrent size in MB for a given piece length in bits */
 /* where an X bit piece length equals a 2^X byte piece size */
-#define BIT23MAX 12800
-#define BIT22MAX 6400
-#define BIT21MAX 3200
-#define BIT20MAX 1600
-#define BIT19MAX 800
-#define BIT18MAX 400
-#define BIT17MAX 200
-#define BIT16MAX 100
-#define BIT15MAX 50
+#define BIT23MAX 15360
+#define BIT22MAX 7680
+#define BIT21MAX 3840
+#define BIT20MAX 1920
+#define BIT19MAX 960
+#define BIT18MAX 480
+#define BIT17MAX 240
+#define BIT16MAX 120
+#define BIT15MAX 60
 
 #include <stdint.h>
 
