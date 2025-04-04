@@ -68,6 +68,9 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA
 #define S_IROTH 0
 #endif
 
+#ifdef _WIN32
+#define srandom(seed) srand(seed)
+#endif
 
 /*
  * create and open the metainfo file for writing and create a stream for it
